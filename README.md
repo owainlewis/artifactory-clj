@@ -20,7 +20,7 @@ The config must specify the host/port of the artifactory instance and some basic
 
 ```clojure
 (ns my-ns
-  (:require [artifactory-clj.artifacts :refer :all]))
+  (:require [artifactory-clj.artifacts :as artifacts]))
 
 ;; Upload an artifact to artifacty
 (artifacts/deploy-artifact config
