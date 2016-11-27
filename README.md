@@ -4,10 +4,11 @@ A Clojure client for working with JFrog Artifactory.
 
 ## Usage
 
-All API request require some basic configuration. The config must specify the host/port of the artifactory instance
-and some basic auth information
+All API request require some basic configuration. 
 
-```
+The config must specify the host/port of the artifactory instance and some basic auth information
+
+```clojure
 (def config
   {:host "http://192.168.99.100:8080"
    :auth {:username "admin"
@@ -49,7 +50,7 @@ without dispatching it.
 ;; {:method :get,
 ;;  :basic-auth ["admin" "password"],
 ;;  :throw-exceptions false,
-:;  :url "http://192.168.99.100:8080/artifactory/api/storage/ext-release-local/project.clj"}
+;;  :url "http://192.168.99.100:8080/artifactory/api/storage/ext-release-local/project.clj"}
 
 ```
 
