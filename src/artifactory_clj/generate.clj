@@ -1,8 +1,6 @@
 (ns artifactory-clj.generate
   (:require [clojure.string :as s]))
 
-;; Code generation
-
 (def example-resource
   {:method "GET"
    :path "/api/build/{build-name}/{build-number}" })
