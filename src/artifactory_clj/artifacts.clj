@@ -3,7 +3,6 @@
            [clojure.java.io :as io]))
 
 ;; Folder Info
-;; ************************************************************
 (defn folder-info
   "For virtual use, the virtual repository returns the unified children.
    Supported by local, local-cached and virtual repositories.
@@ -14,7 +13,6 @@
      :path (core/path-builder "api/storage" repo-key folder-path)}))
 
 ;; File Info
-;; ************************************************************8
 (defn file-info
   "GET /api/storage/{repoKey}/{filePath}
    For virtual use the virtual repository returns the resolved file.
@@ -25,7 +23,6 @@
      :path (core/path-builder "api/storage" repo-key file-path)}))
 
 ;; Get Storage Summary Info
-;; ************************************************************8
 (defn get-storage-summary-info
   "Returns storage summary information regarding binaries, file store and repositories.
    GET /api/storageinfo"
@@ -35,7 +32,6 @@
      :path (core/path-builder "api/storageinfo")}))
 
 ;; Item Last Modified
-;; ************************************************************8
 (defn item-last-modified
   "Retrieve the last modified item at the given path.
    If the given path is a folder, the latest last modified item is searched for recursively.
@@ -47,7 +43,6 @@
      :path (core/path-builder "api/storage" repo-key item-path "?lastModified")}))
 
 ;; File Statistics
-;; ************************************************************8
 (defn file-statistics
   "Item statistics record the number of times an item was downloaded,
    last download date and last downloader.
@@ -70,7 +65,6 @@
 ;; Create Directory
 
 ;; Deploy Artifact
-;; ************************************************************8
 (defn deploy-artifact
   "Deploy an artifact to the specified destination.
    You can also attach properties as part of deploying artifacts.
