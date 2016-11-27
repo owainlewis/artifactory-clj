@@ -13,7 +13,8 @@
      :body (io/input-stream local-file-path)}))
 
 (defn folder-info
-  "For virtual use, the virtual repository returns the unified children. Supported by local, local-cached and virtual repositories.
+  "For virtual use, the virtual repository returns the unified children. 
+   Supported by local, local-cached and virtual repositories.
    GET /api/storage/{repoKey}/{folder-path}"
   [config repo-key folder-path]
   (core/artifactory-request config
@@ -22,7 +23,8 @@
 
 (defn file-info
   "GET /api/storage/{repoKey}/{filePath}
-   For virtual use the virtual repository returns the resolved file. Supported by local, local-cached and virtual repositories."
+   For virtual use the virtual repository returns the resolved file. 
+   Supported by local, local-cached and virtual repositories."
   [config repo-key file-path]
   (core/artifactory-request config
     {:method :get
